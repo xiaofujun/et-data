@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>校验规则 · GitBook</title>
+        <title>示例 demo · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="demo.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="validator.html" />
     
 
     </head>
@@ -219,7 +217,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="validator.html">
+        <li class="chapter " data-level="1.4.1" data-path="validator.html">
             
                 <a href="validator.html">
             
@@ -232,7 +230,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="demo.html">
+        <li class="chapter active" data-level="1.4.2" data-path="demo.html">
             
                 <a href="demo.html">
             
@@ -280,7 +278,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >校验规则</a>
+        <a href="../.." >示例 demo</a>
     </h1>
 </div>
 
@@ -295,25 +293,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x6821;&#x9A8C;&#x89C4;&#x5219;">&#x6821;&#x9A8C;&#x89C4;&#x5219;</h1>
-<h2 id="&#x57FA;&#x7840;&#x6821;&#x9A8C;&#x89C4;&#x5219;">&#x57FA;&#x7840;&#x6821;&#x9A8C;&#x89C4;&#x5219;</h2>
-<p>&#x5728; comProps &#x4E2D;&#x6DFB;&#x52A0;&#x57FA;&#x7840;&#x6821;&#x9A8C;&#x89C4;&#x5219; rules&#x3002;&#x4F8B;&#x5982;&#x5FC5;&#x586B;&#x7B49;<a href="https://learnku.com/docs/laravel/5.7/validation/2262#c58a91" target="_blank">&#x57FA;&#x7840;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#x5217;&#x8868;</a></p>
-<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x6821;&#x9A8C;&#x89C4;&#x5219;">&#x81EA;&#x5B9A;&#x4E49;&#x6821;&#x9A8C;&#x89C4;&#x5219;</h2>
-<p>&#x81EA;&#x5B9A;&#x4E49;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#x9700;&#x8981;&#x914D;&#x5408; <code>customValidator</code> &#x5C5E;&#x6027;&#x4F7F;&#x7528;&#x3002;&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+                                <h1 id="&#x793A;&#x4F8B;-demo">&#x793A;&#x4F8B; demo</h1>
+<p>&#x4EE5;&#x96C6;&#x6210;&#x767B;&#x5F55;&#x8BBE;&#x7F6E;&#x7684;&#x65B0;&#x5EFA;&#x4E3A;&#x4F8B;&#xFF1A;</p>
 <pre><code class="lang-json">{
   <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">200</span>,
   <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-literal">null</span>,
   <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-string">&quot;data&quot;</span>: {
     <span class="hljs-comment">// &#x6309;&#x94AE;&#x4FE1;&#x606F;</span>
-    <span class="hljs-string">&quot;button&quot;</span>: [
-      {
-        <span class="hljs-string">&quot;icon&quot;</span>: <span class="hljs-string">&quot;Icon-OR&quot;</span>,
-        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;save&quot;</span>,
-        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;primary&quot;</span>,
-        <span class="hljs-string">&quot;content&quot;</span>: <span class="hljs-string">&quot;&#x4FDD;&#x5B58;&quot;</span>
-      }
-    ],
+    <span class="hljs-string">&quot;button&quot;</span>: [],
     <span class="hljs-comment">// &#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x53EF;&#x7F16;&#x8F91;&#x5217;&#x8868;&#x4FE1;&#x606F;</span>
     <span class="hljs-string">&quot;customParam&quot;</span>: {
       <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&quot;</span>,
@@ -359,8 +347,8 @@
         },
         <span class="hljs-string">&quot;paramName&quot;</span>: {
           <span class="hljs-string">&quot;itemType&quot;</span>: <span class="hljs-string">&quot;INPUT&quot;</span>,
-          <span class="hljs-string">&quot;rules&quot;</span>: <span class="hljs-string">&quot;required|intUnique|stringLength:50&quot;</span>,  <span class="hljs-comment">// rules &#x4E2D;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x6821;&#x9A8C;&#x89C4;&#x5219;</span>
-          <span class="hljs-string">&quot;placeholder&quot;</span>: <span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&quot;</span>, 
+          <span class="hljs-string">&quot;rules&quot;</span>: <span class="hljs-string">&quot;required|intUnique|stringLength:50&quot;</span>,
+          <span class="hljs-string">&quot;placeholder&quot;</span>: <span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&quot;</span>,
           <span class="hljs-string">&quot;readOnly&quot;</span>: <span class="hljs-literal">false</span>,
           <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">false</span>,
           <span class="hljs-string">&quot;otherParams&quot;</span>: {
@@ -442,7 +430,6 @@
         }
       ],
       <span class="hljs-string">&quot;data&quot;</span>: [],
-      <span class="hljs-comment">// &#x6DFB;&#x52A0; customValidator </span>
       <span class="hljs-string">&quot;customValidator&quot;</span>: {
         <span class="hljs-string">&quot;customRegister&quot;</span>: [
           {
@@ -455,10 +442,6 @@
   }
 }
 </code></pre>
-<h3 id="&#x53C2;&#x6570;&#x540D;&#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;">&#x53C2;&#x6570;&#x540D;&#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;</h3>
-<ol>
-<li><code>rules: &apos;intUnique&apos;</code></li>
-</ol>
 
                                 
                                 </section>
@@ -486,14 +469,10 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 可编辑列表">
+                <a href="validator.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 校验规则">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="demo.html" class="navigation navigation-next " aria-label="Next page: 示例 demo">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -502,7 +481,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"校验规则","level":"1.4.1","depth":2,"next":{"title":"示例 demo","level":"1.4.2","depth":2,"path":"doc/editTable/demo.md","ref":"doc/editTable/demo.md","articles":[]},"previous":{"title":"可编辑列表","level":"1.4","depth":1,"path":"doc/editTable/README.md","ref":"doc/editTable/README.md","articles":[{"title":"校验规则","level":"1.4.1","depth":2,"path":"doc/editTable/validator.md","ref":"doc/editTable/validator.md","articles":[]},{"title":"示例 demo","level":"1.4.2","depth":2,"path":"doc/editTable/demo.md","ref":"doc/editTable/demo.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/editTable/validator.md","mtime":"2021-07-13T05:41:04.022Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-13T07:05:30.913Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"示例 demo","level":"1.4.2","depth":2,"previous":{"title":"校验规则","level":"1.4.1","depth":2,"path":"doc/editTable/validator.md","ref":"doc/editTable/validator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/editTable/demo.md","mtime":"2021-07-13T05:53:46.230Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-13T06:45:09.852Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
