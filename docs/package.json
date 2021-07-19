@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "gitbook init",
     "serve": "gitbook serve",
-    "build": "gitbook build"
+    "build": "gitbook build ./ ./docs"
   },
   "keywords": [],
   "author": "",
