@@ -1,4 +1,4 @@
-# 示例 demo
+# 数据格式
 
 以集成登录设置的新建为例：
 ```json
@@ -7,9 +7,6 @@
   "msg": null,
   "status": true,
   "data": {
-    // 按钮信息
-    "button": [],
-    // 参数设置可编辑列表信息
     "customParam": {
       "title": "自定义参数",
       "deleteConfirm": true,
@@ -27,17 +24,7 @@
           "dataIndex": "remark",
           "comKey": "remark",
           "showRequired": false,
-          "width": "30%"
-        },
-        {
-          "title": "参数值",
-          "dataIndex": "paramTypeId",
-          "comKey": [
-            "paramTypeId",
-            "paramValue"
-          ],
-          "showRequired": false,
-          "width": "40%"
+          "width": "70%"
         }
       ],
       "comProps": {
@@ -54,7 +41,7 @@
         },
         "paramName": {
           "itemType": "INPUT",
-          "rules": "required|intUnique|stringLength:50",
+          "rules": "required|stringLength:50",
           "placeholder": "请输入",
           "readOnly": false,
           "required": false,
@@ -62,39 +49,6 @@
             "autoFocus": false,
             "stringLength": 50
           }
-        },
-        "paramTypeId": {
-          "itemType": "SELECT",
-          "data": [
-            {
-              "id": "1",
-              "content": "固定值"
-            },
-            {
-              "id": "2",
-              "content": "用户录入"
-            }
-          ],
-          "value": "1"
-        },
-        "paramValue": {
-          "itemType": "INPUT",
-          "rules": "stringLength:255",
-          "placeholder": "请输入",
-          "readOnly": false,
-          "required": false,
-          "otherParams": {
-            "autoFocus": true,
-            "stringLength": 255
-          }
-        }
-      },
-      "cascadeRules": {
-        "paramTypeId": {
-          "1": [
-            "paramValue"
-          ],
-          "2": "[]"
         }
       },
       "topTools": [
@@ -136,15 +90,7 @@
           "title": "复制"
         }
       ],
-      "data": [],
-      "customValidator": {
-        "customRegister": [
-          {
-            "name": "intUnique",
-            "errorMessage": "参数名重复"
-          }
-        ]
-      }
+      "data": []
     }
   }
 }
